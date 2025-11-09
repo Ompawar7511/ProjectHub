@@ -1,0 +1,21 @@
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(120deg, #e0f7fa, #f1f8e9);
+}
+
+.project-card {
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-img {
+  height: 180px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}

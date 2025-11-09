@@ -1,0 +1,185 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  font-weight: 500;
+  color: #333;
+}
+
+.nav-links a.active {
+  color: #10b981;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(16,185,129,0.7), rgba(16,185,129,0.7)), 
+              url('https://images.unsplash.com/photo-1581091215364-3e7f2c1bb8d2?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.hero-button {
+  background-color: #10b981;
+  padding: 12px 25px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.hero-button:hover {
+  background-color: #0e9e6e;
+}
+
+/* Mission & Vision */
+.mission-vision {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.mission-vision .card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.mission-vision .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.mission-vision h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.mission-vision p {
+  color: #666;
+}
+
+/* Projects Section */
+.projects-section {
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #333;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.project-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.project-card h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.project-card p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.project-button {
+  background-color: #10b981;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.project-button:hover {
+  background-color: #0e9e6e;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  .hero-section p {
+    font-size: 1rem;
+  }
+}

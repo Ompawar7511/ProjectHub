@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f4f7fb;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .layout-main {
+    margin-left: 0 !important;
+  }
+  
+  .grid-responsive {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+  }
+  
+  .flex-responsive {
+    flex-direction: column !important;
+  }
+  
+  .hide-mobile {
+    display: none !important;
+  }
+  
+  .padding-mobile {
+    padding: 15px !important;
+  }
+  
+  /* Navigation responsive */
+  nav > div {
+    flex-direction: column !important;
+    gap: 15px !important;
+  }
+  
+  nav > div > div:nth-child(2) {
+    display: none !important;
+  }
+  
+  /* Main content responsive */
+  main {
+    padding: 60px 15px !important;
+  }
+  
+  main h1 {
+    font-size: 32px !important;
+    line-height: 1.2 !important;
+  }
+  
+  main p {
+    font-size: 18px !important;
+  }
+  
+  /* Features section responsive */
+  section {
+    padding: 40px 15px !important;
+  }
+  
+  section h2 {
+    font-size: 28px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-responsive {
+    font-size: 14px !important;
+  }
+  
+  .button-responsive {
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+  }
+  
+  .title-mobile {
+    font-size: 24px !important;
+  }
+  
+  .padding-small {
+    padding: 10px !important;
+  }
+  
+  /* Mobile specific styles */
+  body {
+    font-size: 14px;
+  }
+  
+  main h1 {
+    font-size: 24px !important;
+  }
+  
+  main p:first-of-type {
+    font-size: 16px !important;
+  }
+  
+  main p:last-of-type {
+    font-size: 14px !important;
+  }
+  
+  section h2 {
+    font-size: 22px !important;
+  }
+  
+  /* Modal responsive */
+  .auth-modal {
+    padding: 15px !important;
+    margin: 10px !important;
+  }
+  
+  .auth-modal h2 {
+    font-size: 24px !important;
+  }
+  
+  .auth-modal input,
+  .auth-modal button {
+    font-size: 16px !important;
+    padding: 12px !important;
+  }
+  
+  /* Toast responsive */
+  .toast-container {
+    top: 10px !important;
+    right: 10px !important;
+    left: 10px !important;
+  }
+  
+  .toast {
+    min-width: auto !important;
+    width: 100% !important;
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Utility classes for responsive design */
+.mobile-hidden {
+  display: block;
+}
+
+.mobile-visible {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-hidden {
+    display: none !important;
+  }
+  
+  .mobile-visible {
+    display: block !important;
+  }
+}
+
+/* Prevent horizontal scroll on mobile */
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  
+  * {
+    max-width: 100%;
+  }
+}
