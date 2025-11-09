@@ -6,12 +6,6 @@ A modern email web application built with React + Vite.
 
 - ✅ User authentication (Login, Register, Forgot Password, Reset Password)
 - ✅ Email inbox management
-- ✅ Compose and send emails
-- ✅ Save drafts
-- ✅ View sent emails
-- ✅ Delete emails
-- ✅ Search functionality
-- ✅ Admin panel (for admin users)
 - ✅ Protected routes
 - ✅ Modern, responsive UI
 
@@ -87,17 +81,6 @@ The app connects to the backend at http://localhost:5000/api
 - `/users/signin` - Login
 - `/users/otp` - Request OTP for password reset
 - `/users/reset-password` - Reset password with OTP
-- `/mail` - Get inbox
-- `/mail/sent` - Get sent emails
-- `/mail/drafts` - Get drafts
-- `/mail/compose` - Compose/send email or save draft
-- `/mail/:id` - Get specific email
-- `/mail/:id/read` - Mark as read
-- `/mail/:id` - Delete email
-- `/mail/search?q=query` - Search emails
-- `/admin/users` - Get all users (admin only)
-- `/admin/users/:id/toggle-active` - Toggle user status
-- `/admin/user/:id` - Delete user
 
 ## Features in Detail
 
@@ -107,20 +90,6 @@ The app connects to the backend at http://localhost:5000/api
 - Password reset via OTP
 - Protected routes requiring authentication
 
-### Email Management
-- View inbox with unread indicators
-- Compose new emails
-- Save drafts
-- View sent emails
-- Delete emails
-- Mark as read
-- Search across all emails
-
-### Admin Panel
-- View all users
-- Activate/deactivate users
-- Delete users
-- View all user emails
 
 ## License
 
